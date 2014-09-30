@@ -13,12 +13,15 @@ antigen bundle heroku
 antigen bundle pip
 antigen bundle lein
 antigen bundle command-not-found
+antigen bundle olivierverdier/zsh-git-prompt
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-# Load the theme.
+# Load the theme, monkey patch use git_super_status
 antigen theme dallas
+DALLAS_CURRENT_LOCA_="%{$fg[cyan]%}%~\$(git_super_status)%{$reset_color%}\$(parse_git_dirty)"
+PROMPT="$DALLAS_CURRENT_TIME_$DALLAS_CURRENT_RUBY_$DALLAS_CURRENT_MACH_$DALLAS_CURRENT_LOCA_ $DALLAS_CURRENT_USER_$DALLAS_PROMPT_CHAR_ "
 
 # Tell antigen that you're done.
 antigen apply
@@ -28,9 +31,12 @@ antigen apply
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# brew
+# brew path
 export PATH=/usr/local/bin:$PATH
 
+# ~/bin
+export PATH=$HOME/bin:$PATH
+
 # ansible
-source ~/sdks/ansible/hacking/env-setup >> /dev/null
+[ -f ~/sdks/ansible/hacking/env-setup ] && source ~/sdks/ansible/hacking/env-setup >> /dev/null
 
