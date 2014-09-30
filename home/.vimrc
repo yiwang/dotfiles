@@ -9,11 +9,11 @@ Plug 'tomtom/tcomment_vim'
 Plug 'kien/ctrlp.vim'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'chase/vim-ansible-yaml'
+Plug 'kien/rainbow_parentheses.vim'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-Plug 'kien/rainbow_parentheses.vim', { 'for': 'clojure' }
 Plug 'dgrnbrg/vim-redl', { 'for': 'clojure' }
 
 " Using git URL
@@ -38,3 +38,8 @@ set tabstop=2 shiftwidth=2 expandtab
 " redefine leader
 let mapleader = ","
 
+" kien/rainbow_parentheses.vim always on
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
