@@ -40,3 +40,6 @@ export PATH=$HOME/bin:$PATH
 # ansible
 [ -f ~/sdks/ansible/hacking/env-setup ] && source ~/sdks/ansible/hacking/env-setup >> /dev/null
 
+# custom
+[ -f ~/.zshrc_custom ] && source ~/.zshrc_custom
+

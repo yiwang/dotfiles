@@ -1,15 +1,25 @@
 call plug#begin('~/.vim/plugged')
 
+" colorschemes
+" Plug 'junegunn/seoul256.vim'
+" Plug 'fugalh/desert.vim'
+Plug 'altercation/vim-colors-solarized'
+
 " Make sure you use single quotes
 "
 Plug 'tpope/vim-sensible'
-Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'tomtom/tcomment_vim'
 Plug 'kien/ctrlp.vim'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'chase/vim-ansible-yaml'
 Plug 'kien/rainbow_parentheses.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'gkz/vim-ls'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-surround'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -34,6 +44,7 @@ call plug#end()
 syntax on
 filetype plugin indent on
 set tabstop=2 shiftwidth=2 expandtab
+colorscheme solarized
 
 " redefine leader
 let mapleader = ","
