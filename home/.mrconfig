@@ -1,0 +1,11 @@
+[.homesick/repos/homeshick]
+checkout = git clone 'git://github.com/andsens/homeshick.git' 'homeshick'
+
+[.homesick/repos/antigen]
+checkout = git clone 'https://github.com/zsh-users/antigen.git' 'antigen'
+
+[.homesick/repos/vim-plug]
+checkout = git clone 'https://github.com/junegunn/vim-plug.git' 'vim-plug'
+
+[.homesick/repos/dotfiles]
+checkout = git clone 'git@github.com:yiwang/dotfiles.git' 'dotfiles'
