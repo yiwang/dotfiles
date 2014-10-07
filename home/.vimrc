@@ -20,6 +20,7 @@ Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'rking/ag.vim'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -47,6 +48,14 @@ set tabstop=2 shiftwidth=2 expandtab
 colorscheme solarized
 set background=dark
 
+" http://vim.wikia.com/wiki/Highlight_all_search_pattern_matches
+set hlsearch
+" Press Space to turn off highlighting and clear any message already
+" displayed.
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+" Press F4 to toggle highlighting on/off, and show current value.
+noremap <F4> :set hlsearch! hlsearch?<CR>
+
 " redefine leader
 let mapleader = ","
 
@@ -55,3 +64,8 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" ctrlp
+set wildignore+=*/node_modules/*,*/tmp/*,*.so,*.swp,*.zip
+" line number
+set nu
