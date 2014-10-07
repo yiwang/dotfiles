@@ -9,3 +9,6 @@ checkout = git clone 'https://github.com/junegunn/vim-plug.git' 'vim-plug'
 
 [.homesick/repos/dotfiles]
 checkout = git clone 'git@github.com:yiwang/dotfiles.git' 'dotfiles'
+
+[.homesick/repos/myrepos]
+checkout = git clone 'https://github.com/joeyh/myrepos.git' 'myrepos'
