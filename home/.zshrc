@@ -37,8 +37,12 @@ export PATH=/usr/local/bin:$PATH
 # ~/bin
 export PATH=$HOME/bin:$PATH
 
+# n
+export N_PREFIX=$HOME
+
 # ansible
 [ -f ~/sdks/ansible/hacking/env-setup ] && source ~/sdks/ansible/hacking/env-setup >> /dev/null
+
 
 # custom
 [ -f ~/.zshrc_custom ] && source ~/.zshrc_custom

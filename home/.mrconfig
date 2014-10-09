@@ -12,3 +12,6 @@ checkout = git clone 'git@github.com:yiwang/dotfiles.git' 'dotfiles'
 
 [.homesick/repos/myrepos]
 checkout = git clone 'https://github.com/joeyh/myrepos.git' 'myrepos'
+
+[.homesick/repos/n]
+checkout = git clone 'https://github.com/visionmedia/n.git' 'n'
