@@ -20,6 +20,7 @@ Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'digitaltoad/vim-jade'
 Plug 'rking/ag.vim'
 
 " On-demand loading
