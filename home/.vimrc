@@ -70,5 +70,8 @@ au Syntax * RainbowParenthesesLoadBraces
 set wildignore+=*/node_modules/*,*/tmp/*,*.so,*.swp,*.zip
 " line number
 set nu
+
 " tidy html
-:vmap ,x :!tidy -q -i --show-errors 0<CR>
+vmap ,x :!tidy -q -i --show-errors 0<CR>
+command Thtml :%!tidy -q -i --show-errors 0
+command Txml  :%!tidy -q -i --show-errors 0 -xml
