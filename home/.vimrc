@@ -76,3 +76,9 @@ set nu
 vmap ,x :!tidy -q -i --show-errors 0<CR>
 command Thtml :%!tidy -q -i --show-errors 0
 command Txml  :%!tidy -q -i --show-errors 0 -xml
+
+" gui
+if has("gui_running")
+  set guioptions-=T
+  " set guioptions-=m
+endif
