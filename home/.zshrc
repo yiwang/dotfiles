@@ -43,6 +43,7 @@ export N_PREFIX=$HOME
 # ansible
 [ -f ~/sdks/ansible/hacking/env-setup ] && source ~/sdks/ansible/hacking/env-setup >> /dev/null
 
+export EDITOR=vim
 
 # custom
 [ -f ~/.zshrc_custom ] && source ~/.zshrc_custom
