@@ -31,8 +31,8 @@ antigen apply
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# brew path
-export PATH=/usr/local/bin:$PATH
+# brew path, mac only
+# export PATH=/usr/local/bin:$PATH
 
 # ~/bin
 export PATH=$HOME/bin:$PATH
