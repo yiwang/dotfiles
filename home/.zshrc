@@ -45,6 +45,10 @@ export N_PREFIX=$HOME
 
 export EDITOR=vim
 
+# arch
+[ -f ~/.zshrc_arch ] && source ~/.zshrc_arch
+
 # custom
 [ -f ~/.zshrc_custom ] && source ~/.zshrc_custom
+
 
