@@ -41,7 +41,7 @@ export PATH=$HOME/bin:$PATH
 export N_PREFIX=$HOME
 
 # ansible
-[ -f ~/sdks/ansible/hacking/env-setup ] && source ~/sdks/ansible/hacking/env-setup >> /dev/null
+# [ -f ~/sdks/ansible/hacking/env-setup ] && source ~/sdks/ansible/hacking/env-setup >> /dev/null
 
 export EDITOR=vim
 
