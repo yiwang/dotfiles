@@ -15,3 +15,9 @@ checkout = git clone 'https://github.com/joeyh/myrepos.git' 'myrepos'
 
 [.homesick/repos/tpm]
 checkout = git clone 'https://github.com/tmux-plugins/tpm' 'tpm'
+
+[.homesick/repos/n]
+checkout = git clone 'https://github.com/visionmedia/n.git' 'n'
+
+[.homesick/repos/mintty-colors-solarized]
+checkout = git clone 'https://github.com/karlin/mintty-colors-solarized.git' 'mintty-colors-solarized'
