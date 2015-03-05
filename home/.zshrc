@@ -51,4 +51,4 @@ export EDITOR=vim
 # custom
 [ -f ~/.zshrc_custom ] && source ~/.zshrc_custom
 
-
+export TERM=xterm-256color

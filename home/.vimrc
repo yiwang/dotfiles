@@ -1,5 +1,5 @@
 call plug#begin('~/.vim/plugged')
-
+" let g:solarized_termcolors=256
 " colorschemes
 " Plug 'junegunn/seoul256.vim'
 " Plug 'fugalh/desert.vim'
