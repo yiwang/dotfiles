@@ -39,6 +39,7 @@ export PATH=$HOME/bin:$PATH
 
 # n
 export N_PREFIX=$HOME
+export ELM_HOME=/home/e/lib/node_modules/elm/share
 
 # ansible
 # [ -f ~/sdks/ansible/hacking/env-setup ] && source ~/sdks/ansible/hacking/env-setup >> /dev/null
