@@ -25,6 +25,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'digitaltoad/vim-jade'
 Plug 'rking/ag.vim'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'lambdatoast/elm.vim'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
