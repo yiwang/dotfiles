@@ -85,3 +85,15 @@ if has("gui_running")
   set guioptions-=T
   " set guioptions-=m
 endif
+
+" Elm
+nnoremap <leader>el :ElmEvalLine<CR>
+vnoremap <leader>es :<C-u>ElmEvalSelection<CR>
+nnoremap <leader>em :ElmMakeCurrentFile<CR>
+
+" boot
+set backup
+set swapfile
+set backupdir=~/.vim-tmp
+set directory=~/.vim-tmp
+
