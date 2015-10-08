@@ -53,3 +53,6 @@ export EDITOR=vim
 [ -f ~/.zshrc_custom ] && source ~/.zshrc_custom
 
 export TERM=xterm-256color
+
+# added by Anaconda3 2.3.0 installer
+export PATH="/home/e/anaconda3/bin:$PATH"
