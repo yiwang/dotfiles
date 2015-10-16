@@ -34,12 +34,13 @@ antigen apply
 # brew path, mac only
 # export PATH=/usr/local/bin:$PATH
 
-# ~/bin
-export PATH=$HOME/bin:$PATH
 
 # n
-export N_PREFIX=$HOME
+export N_PREFIX=$HOME/n
 export ELM_HOME=/home/e/lib/node_modules/elm/share
+
+# ~/bin
+export PATH=$HOME/bin:$N_PREFIX/bin:$PATH
 
 # ansible
 # [ -f ~/sdks/ansible/hacking/env-setup ] && source ~/sdks/ansible/hacking/env-setup >> /dev/null
@@ -55,4 +56,4 @@ export EDITOR=vim
 export TERM=xterm-256color
 
 # added by Anaconda3 2.3.0 installer
-export PATH="/home/e/anaconda3/bin:$PATH"
+# export PATH="/home/e/anaconda3/bin:$PATH"
