@@ -47,8 +47,14 @@ export PATH=$HOME/bin:$N_PREFIX/bin:$PATH
 
 export EDITOR=vim
 
-# arch
-[ -f ~/.zshrc_arch ] && source ~/.zshrc_arch
+os=`uname`
+if [ "$os" = "Darwin" ]; then
+  # mac
+  [ -f ~/.zshrc_mac ] && source ~/.zshrc_mac
+else
+  # arch
+  [ -f ~/.zshrc_arch ] && source ~/.zshrc_arch
+fi
 
 # custom
 [ -f ~/.zshrc_custom ] && source ~/.zshrc_custom
