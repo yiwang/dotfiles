@@ -10,7 +10,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-sensible'
 Plug 'junegunn/vim-easy-align'
 Plug 'tomtom/tcomment_vim'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'chase/vim-ansible-yaml'
 Plug 'kien/rainbow_parentheses.vim'
@@ -73,6 +73,7 @@ au Syntax * RainbowParenthesesLoadBraces
 
 " ctrlp
 set wildignore+=*/node_modules/*,*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 " line number
 set nu
 
