@@ -27,6 +27,9 @@ Plug 'rking/ag.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'lambdatoast/elm.vim'
 Plug 'venantius/vim-cljfmt'
+Plug 'shime/vim-livedown'
+Plug 'autowitch/hive.vim'
+Plug 'motus/pig.vim'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -99,3 +102,7 @@ set swapfile
 set backupdir=~/.vim-tmp
 set directory=~/.vim-tmp
 
+" for .hql files
+au BufNewFile,BufRead *.hql set filetype=hive expandtab
+" for .q files
+au BufNewFile,BufRead *.q set filetype=hive expandtab

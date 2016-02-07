@@ -9,9 +9,14 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# arch
-[ -f ~/.zshrc_arch ] && source ~/.zshrc_arch
+os=`uname`
+if [ "$os" = "Darwin" ]; then
+  # mac
+  [ -f ~/.zshrc_mac ] && source ~/.zshrc_mac
+else
+  # arch
+  [ -f ~/.zshrc_arch ] && source ~/.zshrc_arch
+fi
 
 # custom
-[ -f ~/.bashrc_custom ] && source ~/.bashrc_custom
-
+[ -f ~/.zshrc_custom ] && source ~/.zshrc_custom
