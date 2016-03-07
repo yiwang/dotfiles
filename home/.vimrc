@@ -30,6 +30,8 @@ Plug 'venantius/vim-cljfmt'
 Plug 'shime/vim-livedown'
 Plug 'autowitch/hive.vim'
 Plug 'motus/pig.vim'
+Plug 'fatih/vim-go'
+Plug 'majutsushi/tagbar'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }

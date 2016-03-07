@@ -61,5 +61,8 @@ fi
 
 export TERM=xterm-256color
 
+# Go
+export GOPATH=~/go
+
 # added by Anaconda3 2.3.0 installer
 # export PATH="/home/e/anaconda3/bin:$PATH"
