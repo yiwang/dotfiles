@@ -2,3 +2,7 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
+# brew install jenv
+export JENV_ROOT=/usr/local/var/jenv
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
