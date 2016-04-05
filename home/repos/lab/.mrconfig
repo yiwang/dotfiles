@@ -1,6 +1,0 @@
-
-[2015-ds-ihrd]
-checkout = git clone 'git@bitbucket.org:yi_wang/2015-ds-ihrd.git' '2015-ds-ihrd'
-
-[secor]
-checkout = git clone 'git@github.com:yiwang/secor.git' 'secor'
