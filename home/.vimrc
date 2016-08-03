@@ -31,7 +31,10 @@ Plug 'shime/vim-livedown'
 Plug 'autowitch/hive.vim'
 Plug 'motus/pig.vim'
 Plug 'fatih/vim-go'
+Plug 'racer-rust/vim-racer'
+Plug 'rust-lang/rust.vim'
 Plug 'majutsushi/tagbar'
+Plug 'cespare/vim-toml'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -108,3 +111,10 @@ set directory=~/.vim-tmp
 au BufNewFile,BufRead *.hql set filetype=hive expandtab
 " for .q files
 au BufNewFile,BufRead *.q set filetype=hive expandtab
+
+" rust
+let g:rustfmt_autosave = 1
+set hidden
+let g:racer_cmd = $HOME . "/.cargo/bin/racer"
+let $RUST_SRC_PATH = $HOME . "/repos/lab/rust/src/"
+
