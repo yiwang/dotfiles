@@ -66,3 +66,9 @@ export GOPATH=~/go
 
 # added by Anaconda3 2.3.0 installer
 # export PATH="/home/e/anaconda3/bin:$PATH"
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
