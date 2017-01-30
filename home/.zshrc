@@ -47,6 +47,14 @@ export PATH=$HOME/bin:$N_PREFIX/bin:$HOME/.cargo/bin:$PATH
 
 export EDITOR=vim
 
+export TERM=xterm-256color
+
+# Go
+export GOPATH=~/go
+
+# added by Anaconda3 2.3.0 installer
+# export PATH="/home/e/anaconda3/bin:$PATH"
+
 os=`uname`
 if [ "$os" = "Darwin" ]; then
   # mac
@@ -58,17 +66,3 @@ fi
 
 # custom
 [ -f ~/.zshrc_custom ] && source ~/.zshrc_custom
-
-export TERM=xterm-256color
-
-# Go
-export GOPATH=~/go
-
-# added by Anaconda3 2.3.0 installer
-# export PATH="/home/e/anaconda3/bin:$PATH"
-
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
