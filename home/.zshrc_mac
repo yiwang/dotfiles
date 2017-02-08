@@ -9,6 +9,9 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 # adb
 export PATH=$PATH:~/Library/Android/sdk/platform-tools
 
+# brew sbin
+export PATH=/usr/local/sbin:$PATH
+
 # iterm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
