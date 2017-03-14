@@ -11,7 +11,7 @@ checkout = git clone 'https://github.com/junegunn/vim-plug.git' 'vim-plug'
 checkout = git clone 'git@github.com:yiwang/dotfiles.git' 'dotfiles'
 
 [.homesick/repos/myrepos]
-checkout = git clone 'https://github.com/joeyh/myrepos.git' 'myrepos'
+checkout = git clone 'https://git.joeyh.name/git/mr.git/' 'myrepos'
 
 [.homesick/repos/tpm]
 checkout = git clone 'https://github.com/tmux-plugins/tpm' 'tpm'
