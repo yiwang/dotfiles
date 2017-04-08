@@ -6,6 +6,9 @@ source /usr/local/bin/virtualenvwrapper.sh
 export JENV_ROOT=/usr/local/var/jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
+export JAVA_HOME="/usr/local/var/jenv/versions/`jenv version-name`"
+alias jenv_set_java_home='export JAVA_HOME="/usr/local/var/jenv/versions/`jenv version-name`"'
+
 # adb
 export PATH=$PATH:~/Library/Android/sdk/platform-tools
 
