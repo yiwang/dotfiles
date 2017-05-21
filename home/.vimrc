@@ -36,6 +36,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'majutsushi/tagbar'
 Plug 'cespare/vim-toml'
 Plug 'derekwyatt/vim-scala'
+Plug 'ntpeters/vim-better-whitespace'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
