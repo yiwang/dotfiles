@@ -50,8 +50,10 @@ export EDITOR=vim
 export TERM=xterm-256color
 
 # Go
+export GOROOT=~/go-1.10.2
+export PATH=$PATH:$GOROOT/bin
 export GOPATH=~/go
-export PATH=$PATH:$GOPATH/bin
+export GOBIN=$GOPATH/bin
 
 #added by Anaconda3 2.3.0 installer
 # export PATH="/home/e/anaconda3/bin:$PATH"
