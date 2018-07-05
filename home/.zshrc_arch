@@ -1,5 +1,5 @@
-export WORKON_HOME=~/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
+#export WORKON_HOME=~/.virtualenvs
+#source /usr/bin/virtualenvwrapper.sh
 
 export PATH=$PATH:~/.cabal/bin:~/.xmonad/bin
 # eval $(ssh-agent) >> /dev/null
