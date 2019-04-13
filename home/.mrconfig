@@ -22,8 +22,3 @@ checkout = git clone 'https://github.com/visionmedia/n.git' 'n'
 [.homesick/repos/mintty-colors-solarized]
 checkout = git clone 'https://github.com/karlin/mintty-colors-solarized.git' 'mintty-colors-solarized'
 
-[.pyenv/plugins/pyenv-virtualenv]
-checkout = git clone 'https://github.com/yyuu/pyenv-virtualenv.git' 'pyenv-virtualenv'
-
-[.pyenv/plugins/pyenv-virtualenvwrapper]
-checkout = git clone 'https://github.com/yyuu/pyenv-virtualenvwrapper.git' 'pyenv-virtualenvwrapper'
