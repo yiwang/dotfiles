@@ -1,3 +1,4 @@
+# pod
 export GEM_HOME=$HOME/.gem
 export PATH=$GEM_HOME/ruby/2.3.0/bin:$PATH
 
@@ -13,6 +14,7 @@ export PATH=$PATH:~/Library/Android/sdk/platform-tools
 
 # brew sbin
 export PATH=/usr/local/sbin:$PATH
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
 # iterm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
