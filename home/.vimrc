@@ -61,7 +61,7 @@ call plug#end()
 syntax on
 filetype plugin indent on
 set tabstop=2 shiftwidth=2 expandtab
-colorscheme solarized
+" colorscheme solarized
 set background=dark
 
 " http://vim.wikia.com/wiki/Highlight_all_search_pattern_matches
