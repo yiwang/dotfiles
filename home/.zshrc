@@ -50,10 +50,10 @@ export EDITOR=vim
 export TERM=xterm-256color
 
 # Go
-export GOROOT=~/go-1.10.2
-export PATH=$PATH:$GOROOT/bin
-export GOPATH=~/go
-export GOBIN=$GOPATH/bin
+#export GOROOT=~/go-1.10.2
+#export PATH=$PATH:$GOROOT/bin
+#export GOPATH=~/go
+#export GOBIN=$GOPATH/bin
 
 #added by Anaconda3 2.3.0 installer
 # export PATH="/home/e/anaconda3/bin:$PATH"
@@ -72,3 +72,12 @@ fi
 
 # custom
 [ -f ~/.zshrc_custom ] && source ~/.zshrc_custom
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# add Pulumi to the PATH
+export PATH=$PATH:$HOME/.pulumi/bin
