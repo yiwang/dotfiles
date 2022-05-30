@@ -1,6 +1,7 @@
 # pod
 export GEM_HOME=$HOME/.gem
-export PATH=$GEM_HOME/ruby/2.3.0/bin:$PATH
+export PATH=$GEM_HOME/bin:$PATH
+export PATH=$GEM_HOME/ruby/2.6.0/bin:$PATH
 
 # brew install jenv
 export JENV_ROOT=/usr/local/var/jenv
